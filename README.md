@@ -45,9 +45,14 @@ mkdir <EMP_directory>
 qiime tools import --type EMPPairedEndSequences --input-path <EMP_directory> \
   --output-path emp-paired-end-sequences.qza
 ```
+Once you have imported your samples, you can demultiplex the sequence reads. This requires the ```sample metadata``` file, and you must indicate which column in that file contains the per-sample barcodes. In this case, that column name is barcode-sequence. In this data set, the barcode reads are the reverse complement of those included in the sample metadata file, so we additionally include the ```--p-rev-comp-mapping-barcodes``` parameter. After demultiplexing, we can generate and view a summary of how many sequences were obtained per sample.
+
+```Bash
+qiime demux emp-paired --m-barcodes-file sample-metadata.tsv --m-barcodes-column barcode-sequence --p-rev-comp-mapping-barcodes \
+--i-seqs emp-paired-end-sequences.qza --o-per-sample-sequences demux-full.qza --o-error-correction-details demux-details.qza
+```
 
 Casava files instead are already demultiplexed, for importing the data we should use another command
-
 ```Bash
 mkdir <Casava_directory>
 tools import --type 'SampleData[PairedEndSequencesWithQuality]' --input-path <Casava_directory> \
