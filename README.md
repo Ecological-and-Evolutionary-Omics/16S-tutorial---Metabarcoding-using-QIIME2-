@@ -19,7 +19,7 @@ In Casava ```R1``` and ```R2``` stand for forward and reverse, while the other p
 ## Installation of QIIME2
 
 >[!NOTE]
->It is important for you to know that the package QIIME2 is pronounced as _"Shyme2"_ this could be important when talking with other colleagues :smile:
+>It is important for you to know that the package QIIME2 is pronounced as _"Chain2"_ this could be important when talking with other colleagues :smile:
 
 For [installing](https://docs.qiime2.org/2023.7/install/) the QIIME2 package please go to their website and follow the stablished protocols.
 
