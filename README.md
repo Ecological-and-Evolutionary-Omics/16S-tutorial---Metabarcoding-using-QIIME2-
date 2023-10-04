@@ -1,4 +1,4 @@
-#16S tutorial - METABARCODING (Using QIIME2)
+# 16S tutorial - METABARCODING (Using QIIME2)
 >[!WARNING]
 >This tutorial will work with a Unix Terminal, please make sure you are using linux :penguin: or apple :apple: OS
 
@@ -18,7 +18,7 @@ In Casava ```R1``` and ```R2``` stand for forward and reverse, while the other p
 
 ## Installation of QIIME2
 
->[!INFO]
+>[!NOTE]
 >It is important for you that the package QIIME2 is pronounced as _"Shyme2"_ this could be important when talking with other colleagues :smile:
 
 For installing the QIIME2 package please go to their website and follow the stablished protocols.[LINK]()
